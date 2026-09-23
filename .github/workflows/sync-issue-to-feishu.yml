@@ -1,9 +1,7 @@
 name: Sync GitHub issues to Feishu
 
 on:
-  issues:
-    types: [opened]
-
+  workflow_dispatch:
 permissions:
   contents: read
   issues: read
