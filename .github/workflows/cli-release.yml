@@ -1,20 +1,5 @@
 name: CLI release
 on:
-  push:
-    tags: ['v*']
-  pull_request:
-    paths:
-      - '.github/workflows/cli-release.yml'
-      - 'scripts/build.mjs'
-      - 'scripts/*cli-release.mjs'
-      - 'scripts/release-cli.mjs'
-      - 'scripts/lib/cli-release.mjs'
-      - 'scripts/verify.mjs'
-      - 'test/smoke.test.mjs'
-      - 'test/byok.test.mjs'
-      - 'pnpm-lock.yaml'
-      - 'package.json'
-      - 'packages/tui/package.json'
   workflow_dispatch:
     inputs:
       tag:
